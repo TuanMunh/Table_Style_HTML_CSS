@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            background-color: #96D4D4;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #81c532;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <caption>Monthly savings</caption>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th colspan="2">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Đăng Khoa</td>
+                <td>23</td>
+                <td>300$</td>
+                <td>400$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Phạm Quý Vương</td>
+                <td rowspan="2">21</td>
+                <td>200$</td>
+                <td>300$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Đinh Thị Thanh Hằng</td>
+                <td>450$</td>
+                <td>600$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tạ Xuân Tùng</td>
+                <td>20</td>
+                <td>600$</td>
+                <td>900$</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
